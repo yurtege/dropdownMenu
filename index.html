@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+   <div id="navbar" class="flex bg-blue-500 relative w-full h-10 items-center">
+
+        <div id="sidebar" class="absolute left-4 md:hidden ">
+            <i id="menuDisplay" onclick="displayMenu()" class="fa-solid fa-grip-lines cursor-pointer hover:text-blue-400"></i>
+        </div>
+
+        <a href="" class="hidden md:block md:hover:text-blue-400 md:absolute md:left-6 md:font-extrabold">LOGO</a>
+
+
+        <ul class="hidden md:flex md:justify-evenly md:gap-2 md:absolute md:left-64">
+            <li><a href="" class="hover:text-blue-400">Home</a></li>
+            <p>|</p>
+            <li><a href="" class="hover:text-blue-400">About</a></li>
+            <p>|</p>
+            <li><a href="" class="hover:text-blue-400">Orders</a></li>
+            <p>|</p>
+            <li><a href="" class="hover:text-blue-400">Profile</a></li>
+        </ul>
+
+        <div id="symbols" class="hidden md:flex md:justify-evenly md:gap-2 md:absolute md:right-6">
+            <a href=""><i class="fa-solid fa-cart-shopping self-center hover:text-blue-400"></i></a>
+            <p>|</p>
+            <a href=""><i class="fa-solid fa-circle-user self-center hover:text-blue-400"></i></a>
+            <p>|</p>
+            <a href=""><i class="fa-solid fa-grip-lines self-center hover:text-blue-400"></i></a>
+        </div>
+
+    </div>
+
+    <div> <!--dropdown-->
+        <ul id="dropdownMenu" class="hidden absolute gap-1 px-6 py-2 bg-blue-300 md:hidden">
+            <button onclick="hideMenu()" class="absolute right-1 top-0 hover:border-2 hover:border-black cursor-pointer">X</button>
+
+            <li><a href="" class="hover:text-blue-400 hover:bg-red-500 px-6 py-2">Home</a></li>
+            <li><a href="" class="hover:text-blue-400 hover:bg-red-500 px-6 py-2">About</a></li>
+            <li><a href="" class="hover:text-blue-400 hover:bg-red-500 px-6">Orders</a></li>
+            <li><a href="" class="hover:text-blue-400 hover:bg-red-500 px-6 py-2">Profile</a></li>
+        </ul>
+    </div>
+
+    <div class="flex justify-center mt-10">
+        <div id="boxesPlaces" class="grid grid-cols-2 grid-rows-auto auto-rows-48 md:grid-cols-4 md:grid-rows-auto gap-4 w-4/5">
+            <img src="photos/images-2.jpeg" id="box1" class="bg-blue-200 w-full h-48 object-cover"></img>
+            <img src="photos/images-5.jpeg" id="box2" class="bg-blue-200 w-full h-48 object-cover"></img>
+            <div id="box3" class="bg-blue-200 h-48 w-full"></div>
+            <div id="box4" class="bg-blue-200 h-48 w-full"></div>
+            <div id="box5" class="col-span-2 h-48 w-full">
+                <img src="photos/images-3.jpeg" class="w-full h-48 object-cover"></img>
+            </div>
+            <div id="box6" class="bg-blue-200 h-48 w-full"></div>
+            <div id="box7" class="row-span-2">
+                <img src="photos/images-6.jpeg" class="w-full h-full object-cover"></img>
+            </div>
+            <div id="box8" class="bg-blue-200 w-full h-48"></div>
+            <div id="box9" class="bg-blue-200 w-full h-48"></div>
+            <div id="box10" class="bg-blue-200 w-full h-48"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
